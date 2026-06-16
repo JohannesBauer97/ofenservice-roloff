@@ -1,54 +1,171 @@
 # AGENTS.md
 
-## Project Context
+## Projektkontext
 
-This repository contains the static website for Ofenservice Roloff. The site is intended to be hosted with GitHub Pages, so all changes must remain compatible with static hosting and must not require a custom backend, server runtime, build service, or private infrastructure unless explicitly requested.
+Dieses Repository enthält die statische Website für **Ofenservice Roloff**, den Handwerksbetrieb von **Jan Roloff** in Tangermünde.
 
-## Development Principles
+Ziel ist eine schlanke, seriöse und mobiloptimierte Visitenkarten-Website, die auf **GitHub Pages** unter folgender Domain veröffentlicht wird:
 
-- Keep the site deployable through GitHub Pages.
-- Optimize every user-facing change for both mobile and desktop.
-- Optimize every user-facing change for SEO.
-- Prefer simple, static, accessible HTML/CSS/JavaScript over unnecessary tooling.
-- Avoid dependencies or build steps unless they provide clear value for this small static site.
+* Repository: `https://github.com/JohannesBauer97/ofenservice-roloff`
+* Produktivdomain: `https://ofenservice-roloff.de/`
 
-## Responsive Design Requirements
+Die Website soll ohne Backend, ohne Datenbank und ohne externe Laufzeitabhängigkeiten funktionieren.
 
-Mobile and desktop optimization are mandatory quality gates. Implement them to the highest practical standard for every visual or layout change.
+## Grundsätzliche Anforderungen
 
-- Test layouts across small mobile, large mobile, tablet, and desktop viewport widths.
-- Prevent horizontal scrolling, clipped content, accidental overflow, and visual overlap.
-- Use responsive sizing, spacing, and layout primitives rather than fixed desktop-only dimensions.
-- Ensure text remains readable and does not collide with illustrations, cards, controls, or viewport edges.
-- Treat mobile as a first-class experience, not as a reduced fallback.
-- Verify important changes visually before considering the work complete.
+* Statische Website für GitHub Pages.
+* Keine Backend-Abhängigkeiten.
+* Keine Frontend-Frameworks.
+* Keine extern eingebundenen Assets von Remoteservern.
+* Alle Bilder, Fonts, Icons und sonstigen Assets müssen lokal im Repository liegen.
+* Keine Cookies und kein Tracking.
+* Keine Cookiemeldung einbauen.
+* Desktop- und Mobile-First-Optimierung sicherstellen.
+* SEO vollständig und bestmöglich innerhalb eines statischen GitHub-Pages-Setups optimieren. Dazu gehören insbesondere: saubere semantische HTML-Struktur, korrekte Heading-Hierarchie, optimierte Meta-Titel und Meta-Descriptions, strukturierte Daten (Schema.org/LocalBusiness bzw. Handwerksbetrieb), Open-Graph- und Social-Media-Metadaten, Canonical-URLs, robots.txt, sitemap.xml, sprechende URLs, optimierte interne Verlinkung, lokale SEO-Signale (Tangermünde, Region, Leistungen), performante Ladezeiten (Core Web Vitals), optimierte Bildgrößen und Alt-Texte, sinnvolle Keyword-Abdeckung ohne Keyword-Stuffing, korrekte Sprach- und Regionstags, saubere Indexierbarkeit sowie technisch valide HTML-Strukturen. SEO soll als Priorität betrachtet werden, soweit dies ohne Tracking, externe Dienste oder Backend möglich ist.
+* Gute Performance, geringe Dateigrößen und klare HTML-Struktur priorisieren.
+* Barrierearme Umsetzung mit semantischem HTML, sinnvollen Alt-Texten und ausreichenden Kontrasten.
+* Vorerst kein Logo und kein Favicon einplanen, sofern nicht explizit nachgereicht.
 
-## SEO Requirements
+## Gewünschter Charakter der Website
 
-SEO optimization is a mandatory quality gate. Implement it to the highest practical standard for every content or page-structure change.
+Die Website soll wie eine kurze, vertrauenswürdige digitale Visitenkarten-Website wirken.
 
-- Use a clear, accurate document title.
-- Maintain a useful meta description.
-- Use semantic HTML landmarks and a logical heading structure.
-- Keep visible content meaningful, concise, and relevant to Ofenservice Roloff.
-- Preserve crawlability by avoiding unnecessary client-side rendering for essential content.
-- Keep assets lightweight and performant.
-- Add structured metadata only when it is accurate and useful.
+Wichtig sind:
 
-## GitHub Pages Constraints
+* Persönlicher Eindruck durch ein Porträt von Jan Roloff.
+* Kurze, verständliche Beschreibung der angebotenen Dienstleistungen.
+* Sehr einfache Kontaktaufnahme per Telefon, WhatsApp und E-Mail.
+* Hinweis, dass auch bei nicht explizit beschriebenen Leistungen einfach Kontakt aufgenommen werden kann.
+* Handwerklicher, bodenständiger und seriöser Stil.
 
-- The published site must work as static files.
-- Use relative paths unless an absolute URL is required.
-- Keep the root `index.html` suitable as the main entry point.
-- Preserve the custom domain setup when `CNAME` is present.
-- Do not introduce deployment assumptions that conflict with GitHub Pages.
+## Dienstleistungen
 
-## Definition of Done
+Aus der Handwerkskarte extrahierte Leistungen:
 
-Before finishing a change, confirm that:
+* Reparaturarbeiten
+* Schornsteinbau, insbesondere Edelstahl-Schornsteinbau
+* Reinigungsarbeiten
+* Reinigungsklappen einmauern
+* Anschluss und Montage von Öfen
 
-- The page works from a static GitHub Pages-style environment.
-- Mobile and desktop layouts have been checked.
-- There is no unintended horizontal scrolling.
-- SEO-relevant metadata and semantic structure remain correct.
-- Unrelated local changes are left untouched.
+Empfohlene Website-Formulierung:
+
+```text
+Ofenservice Roloff bietet Reparaturarbeiten an Öfen und Luftheizungen, Edelstahl-Schornsteinbau, Reinigungsarbeiten, das Einmauern von Reinigungsklappen sowie den Anschluss und die Montage von Öfen an.
+```
+
+Zusätzlicher Hinweis:
+
+```text
+Ihre gewünschte Leistung ist nicht aufgeführt? Nehmen Sie einfach Kontakt auf und schildern Sie Ihr Anliegen.
+```
+
+## Kontaktangaben
+
+Für Kontaktbereiche und Impressum verwenden:
+
+```text
+Telefon: <PLATZHALTER>
+E-Mail: mail@ofenservice-roloff.de
+WhatsApp: <PLATZHALTER>
+```
+
+## Rechtliche Angaben für das Impressum
+
+### Anbieter
+
+```text
+Ofenservice Roloff
+Jan Roloff
+Goethestr. 50
+39590 Tangermünde
+Deutschland
+```
+
+### Kontakt
+
+```text
+Telefon: <PLATZHALTER>
+E-Mail: mail@ofenservice-roloff.de
+```
+
+### Umsatzsteuer-ID
+
+```text
+Umsatzsteuer-Identifikationsnummer: <PLATZHALTER>
+```
+
+Falls keine Umsatzsteuer-ID vorhanden ist, diesen Abschnitt nicht mit einer Steuernummer ersetzen. Keine private Steuernummer veröffentlichen.
+
+### Handwerkskammer
+
+```text
+Handwerkskammer Magdeburg
+Gareisstr. 10
+39106 Magdeburg
+Deutschland
+
+E-Mail: info@hwk-magdeburg.de
+Website: www.hwk-magdeburg.de
+```
+
+### Eintragung
+
+```text
+Eingetragen in die Handwerksrolle der Handwerkskammer Magdeburg
+Betriebs-Nr.: 52714
+```
+
+### Berufs- / Handwerksbezeichnung
+
+```text
+Ofen- und Luftheizungsbauer
+Eingetragenes zulassungspflichtiges Handwerk
+```
+
+### Teiltätigkeiten laut Handwerkskarte
+
+```text
+Reparaturarbeiten, Schornsteinbau (Edelstahl), Reinigungsarbeiten, Reinigungsklappen einmauern, Anschluss und Montage von Öfen
+```
+
+### Berufsrechtliche Regelung
+
+```text
+Handwerksordnung (HwO)
+```
+
+## Datenschutz
+
+Die Datenschutzerklärung soll **nicht KI-generiert** werden.
+
+Stattdessen gilt:
+
+* Datenschutzerklärung durch den eRecht24-Generator erstellen lassen.
+* Der fertige Text muss vom Nutzer bereitgestellt werden.
+* Bis dahin nur eine Platzhalterseite oder einen klar markierten Platzhalter verwenden.
+* Keine Tracking-, Analytics-, Cookie- oder externen CDN-Dienste einbauen.
+
+## Technische Vorgaben
+
+* Plain HTML, CSS und optional Vanilla JavaScript.
+* Keine Build-Pipeline voraussetzen.
+* Keine npm-Abhängigkeiten einführen, außer ausdrücklich gewünscht.
+* Keine Frameworks wie React, Vue, Angular, Svelte, Astro oder Next.js verwenden.
+* Keine Remote-CDNs für CSS, JS, Fonts oder Icons verwenden.
+* Bilder lokal ablegen und optimieren.
+* Kontaktlinks dürfen Platzhalter enthalten, solange echte Telefonnummern noch fehlen.
+
+## Qualitätskriterien
+
+Vor Abschluss einer Änderung prüfen:
+
+* Funktioniert die Seite lokal als statische Datei oder über einen einfachen lokalen Server?
+* Sind alle Links korrekt?
+* Sind Platzhalter klar sichtbar?
+* Ist die mobile Darstellung sauber?
+* Sind Impressum und Datenschutz im Footer erreichbar?
+* Werden keine externen Ressourcen geladen?
+* Sind HTML und CSS sauber strukturiert?
+* Sind die Texte kurz, verständlich und seriös?
+* Sind sensible Daten nur enthalten, wenn sie ausdrücklich freigegeben wurden?
