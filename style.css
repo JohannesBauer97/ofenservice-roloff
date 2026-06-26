@@ -210,7 +210,7 @@ h1 {
 
 .service-list li {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 1.25rem;
   padding: 1rem 0;
   border-bottom: 1px solid var(--border);
@@ -229,6 +229,7 @@ h1 {
   width: 18px;
   height: 2px;
   background: var(--copper);
+  margin-top: 0.55rem;
 }
 
 .service-note {
