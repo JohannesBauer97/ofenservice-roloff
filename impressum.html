@@ -10,9 +10,12 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <header>
     <div class="container">
-      <a href="/" class="site-name">Ofenservice Roloff</a>
+      <a href="/" class="logo-link" aria-label="Ofenservice Roloff – Startseite">
+        <img src="logo.jpeg" alt="Ofenservice Roloff" class="site-logo">
+      </a>
     </div>
   </header>
 
@@ -32,12 +35,12 @@
 
         <h2>Kontakt</h2>
         <p>
-          Telefon: <span style="color:#aaa;font-style:italic">[Telefonnummer folgt]</span><br>
+          Telefon: <span class="placeholder">[Telefonnummer folgt]</span><br>
           E-Mail: <a href="mailto:mail@ofenservice-roloff.de">mail@ofenservice-roloff.de</a>
         </p>
 
         <h2>Umsatzsteuer</h2>
-        <p><span style="color:#aaa;font-style:italic">[Umsatzsteuer-Identifikationsnummer folgt, sofern vorhanden]</span></p>
+        <p><span class="placeholder">[Umsatzsteuer-Identifikationsnummer folgt, sofern vorhanden]</span></p>
 
         <h2>Berufs- und Handwerksbezeichnung</h2>
         <p>
@@ -69,11 +72,14 @@
   </main>
 
   <footer>
-    <div class="container">
+    <div class="container footer-inner">
       <span>&copy; 2025 Ofenservice Roloff</span>
-      <a href="/impressum.html" aria-current="page">Impressum</a>
-      <a href="/datenschutz.html">Datenschutz</a>
+      <nav aria-label="Rechtliche Links">
+        <a href="/impressum.html" aria-current="page">Impressum</a>
+        <a href="/datenschutz.html">Datenschutz</a>
+      </nav>
     </div>
   </footer>
+
 </body>
 </html>

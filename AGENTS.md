@@ -24,7 +24,7 @@ Die Website soll ohne Backend, ohne Datenbank und ohne externe Laufzeitabhängig
 * SEO vollständig und bestmöglich innerhalb eines statischen GitHub-Pages-Setups optimieren. Dazu gehören insbesondere: saubere semantische HTML-Struktur, korrekte Heading-Hierarchie, optimierte Meta-Titel und Meta-Descriptions, strukturierte Daten (Schema.org/LocalBusiness bzw. Handwerksbetrieb), Open-Graph- und Social-Media-Metadaten, Canonical-URLs, robots.txt, sitemap.xml, sprechende URLs, optimierte interne Verlinkung, lokale SEO-Signale (Tangermünde, Region, Leistungen), performante Ladezeiten (Core Web Vitals), optimierte Bildgrößen und Alt-Texte, sinnvolle Keyword-Abdeckung ohne Keyword-Stuffing, korrekte Sprach- und Regionstags, saubere Indexierbarkeit sowie technisch valide HTML-Strukturen. SEO soll als Priorität betrachtet werden, soweit dies ohne Tracking, externe Dienste oder Backend möglich ist.
 * Gute Performance, geringe Dateigrößen und klare HTML-Struktur priorisieren.
 * Barrierearme Umsetzung mit semantischem HTML, sinnvollen Alt-Texten und ausreichenden Kontrasten.
-* Vorerst kein Logo und kein Favicon einplanen, sofern nicht explizit nachgereicht.
+* Vorerst kein Favicon einplanen, sofern nicht explizit nachgereicht.
 
 ## Gewünschter Charakter der Website
 

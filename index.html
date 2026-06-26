@@ -62,90 +62,88 @@
   </script>
 </head>
 <body>
+
   <header>
     <div class="container">
-      <a href="/" class="site-name">Ofenservice Roloff</a>
+      <a href="/" class="logo-link" aria-label="Ofenservice Roloff – Startseite">
+        <img src="logo.jpeg" alt="Ofenservice Roloff" class="site-logo">
+      </a>
     </div>
   </header>
 
   <main>
+
     <section id="hero" aria-label="Willkommen">
       <div class="container">
-        <div class="hero-inner">
-          <img
-            src="portrait.png"
-            alt="Jan Roloff, Inhaber von Ofenservice Roloff"
-            class="hero-portrait"
-            width="200"
-            height="200"
-            fetchpriority="high"
-          >
-          <div class="hero-text">
-            <h1>Ofenservice Roloff</h1>
-            <p class="hero-tagline">Ofen- und Luftheizungsbauer aus Tangermünde</p>
-            <p>Professionelle Reparaturen, Schornsteinbau und Montage von Öfen – persönlich, zuverlässig und aus der Region.</p>
+        <div class="hero-grid">
+
+          <div class="hero-portrait-col">
+            <img
+              src="portrait.png"
+              alt="Jan Roloff, Inhaber von Ofenservice Roloff"
+              class="hero-portrait"
+              fetchpriority="high"
+            >
+          </div>
+
+          <div class="hero-content-col">
+            <span class="eyebrow">Ofen- und Luftheizungsbauer · Tangermünde</span>
+            <h1>Jan Roloff</h1>
+            <p class="tagline">„Wärme, die bleibt."</p>
+            <p class="hero-desc">Professionelle Reparaturen, Schornsteinbau und Montage von Öfen – persönlich, zuverlässig und aus der Region.</p>
             <a href="#kontakt" class="btn-primary">Jetzt Kontakt aufnehmen</a>
           </div>
+
         </div>
       </div>
     </section>
 
     <section id="leistungen" aria-labelledby="leistungen-heading">
       <div class="container">
-        <h2 id="leistungen-heading">Leistungen</h2>
-        <p>Ofenservice Roloff bietet Reparaturarbeiten an Öfen und Luftheizungen, Edelstahl-Schornsteinbau, Reinigungsarbeiten, das Einmauern von Reinigungsklappen sowie den Anschluss und die Montage von Öfen an.</p>
-        <ul class="leistungen-list">
+        <h2 class="section-label" id="leistungen-heading">Leistungen</h2>
+        <ul class="service-list" role="list">
           <li>Reparaturarbeiten an Öfen und Luftheizungen</li>
           <li>Schornsteinbau, insbesondere Edelstahl-Schornsteinbau</li>
           <li>Reinigungsarbeiten</li>
           <li>Reinigungsklappen einmauern</li>
           <li>Anschluss und Montage von Öfen</li>
         </ul>
-        <p class="leistungen-hinweis">Ihre gewünschte Leistung ist nicht aufgeführt? Nehmen Sie einfach Kontakt auf und schildern Sie Ihr Anliegen.</p>
+        <p class="service-note">Ihre gewünschte Leistung ist nicht aufgeführt? Nehmen Sie einfach Kontakt auf und schildern Sie Ihr Anliegen.</p>
       </div>
     </section>
 
     <section id="kontakt" aria-labelledby="kontakt-heading">
       <div class="container">
-        <h2 id="kontakt-heading">Kontakt</h2>
-        <p>Sprechen Sie mich direkt an – per Telefon, WhatsApp oder E-Mail.</p>
-        <div class="kontakt-grid">
-          <div class="kontakt-card">
-            <!-- Phone icon -->
-            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-              <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.18 21 3 13.82 3 5a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.03l-2.2 2.19z"/>
-            </svg>
-            <span class="kontakt-label">Telefon</span>
-            <span class="kontakt-wert kontakt-placeholder">[Telefonnummer folgt]</span>
+        <h2 class="section-label" id="kontakt-heading">Kontakt</h2>
+        <p class="kontakt-intro">Sprechen Sie mich direkt an – per E-Mail, Telefon oder WhatsApp.</p>
+        <div class="kontakt-channels">
+          <a href="mailto:mail@ofenservice-roloff.de" class="kontakt-row kontakt-row--link">
+            <span class="kontakt-type">E-Mail</span>
+            <span class="kontakt-val">mail@ofenservice-roloff.de</span>
+          </a>
+          <div class="kontakt-row">
+            <span class="kontakt-type">Telefon</span>
+            <span class="kontakt-val kontakt-pending">folgt</span>
           </div>
-          <div class="kontakt-card">
-            <!-- WhatsApp icon -->
-            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
-              <path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.526 5.855L.057 23.491a.5.5 0 00.614.596l5.788-1.517A11.93 11.93 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22a9.93 9.93 0 01-5.065-1.379l-.363-.215-3.763.987.988-3.671-.236-.375A9.956 9.956 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
-            </svg>
-            <span class="kontakt-label">WhatsApp</span>
-            <span class="kontakt-wert kontakt-placeholder">[WhatsApp-Nummer folgt]</span>
-          </div>
-          <div class="kontakt-card">
-            <!-- Email icon -->
-            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-              <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-            </svg>
-            <span class="kontakt-label">E-Mail</span>
-            <a href="mailto:mail@ofenservice-roloff.de" class="kontakt-wert">mail@ofenservice-roloff.de</a>
+          <div class="kontakt-row">
+            <span class="kontakt-type">WhatsApp</span>
+            <span class="kontakt-val kontakt-pending">folgt</span>
           </div>
         </div>
       </div>
     </section>
+
   </main>
 
   <footer>
-    <div class="container">
+    <div class="container footer-inner">
       <span>&copy; 2025 Ofenservice Roloff</span>
-      <a href="/impressum.html">Impressum</a>
-      <a href="/datenschutz.html">Datenschutz</a>
+      <nav aria-label="Rechtliche Links">
+        <a href="/impressum.html">Impressum</a>
+        <a href="/datenschutz.html">Datenschutz</a>
+      </nav>
     </div>
   </footer>
+
 </body>
 </html>
