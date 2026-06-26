@@ -19,6 +19,8 @@
   <meta name="twitter:title" content="Ofenservice Roloff – Ofen- und Luftheizungsbauer in Tangermünde">
   <meta name="twitter:description" content="Reparaturen, Edelstahl-Schornsteinbau, Reinigungsarbeiten, Anschluss und Montage von Öfen in Tangermünde.">
 
+  <link rel="preload" href="fonts/Roboto-VariableFont_wdth,wght.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="portrait.webp" as="image">
   <link rel="stylesheet" href="style.css">
 
   <!-- Schema.org structured data (LocalBusiness) -->
@@ -66,7 +68,7 @@
   <header>
     <div class="container">
       <a href="/" class="logo-link" aria-label="Ofenservice Roloff – Startseite">
-        <img src="logo.webp" alt="Ofenservice Roloff" class="site-logo">
+        <img src="logo.webp" alt="Ofenservice Roloff" class="site-logo" width="652" height="378">
       </a>
     </div>
   </header>
@@ -80,6 +82,8 @@
           <div class="hero-portrait-col">
             <img
               src="portrait.webp"
+              srcset="portrait-760.webp 760w, portrait.webp 1122w"
+              sizes="(max-width: 680px) 100vw, 380px"
               alt="Jan Roloff, Inhaber von Ofenservice Roloff"
               class="hero-portrait"
               fetchpriority="high"
