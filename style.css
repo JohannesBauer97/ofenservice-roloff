@@ -67,6 +67,7 @@ header {
   background-color: var(--white);
   border-bottom: 1px solid var(--border);
   padding: 1rem 0;
+  text-align: center;
 }
 
 .logo-link {
