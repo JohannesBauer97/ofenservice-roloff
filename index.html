@@ -93,11 +93,11 @@
       "@type": "OfferCatalog",
       "name": "Leistungen",
       "itemListElement": [
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Reparaturarbeiten an Öfen und Luftheizungen"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Edelstahl-Schornsteinbau"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Reinigungsarbeiten"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Reinigungsklappen einmauern"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Anschluss und Montage von Öfen"}}
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Reparatur und Instandsetzung von Kaminöfen"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Schornsteinbau"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Schornsteinarbeiten"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Ofenmontage"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Wartung und Reinigung"}}
       ]
     }
   }
@@ -145,13 +145,56 @@
     <section id="leistungen" aria-labelledby="leistungen-heading">
       <div class="container">
         <h2 class="section-label" id="leistungen-heading">Leistungen</h2>
-        <ul class="service-list" role="list">
-          <li>Reparaturarbeiten an Öfen und Luftheizungen</li>
-          <li>Schornsteinbau, insbesondere Edelstahl-Schornsteinbau</li>
-          <li>Reinigungsarbeiten an Öfen und Luftheizungen (kein Einbau von Luftheizungen)</li>
-          <li>Reinigungsklappen einmauern</li>
-          <li>Anschluss und Montage von Öfen</li>
-        </ul>
+        <div class="service-groups">
+
+          <article class="service-group">
+            <h3 class="service-group__title">Reparatur und Instandsetzung von Kaminöfen</h3>
+            <ul role="list">
+              <li>Austausch von Schamottsteinen</li>
+              <li>Erneuerung von Türdichtungen</li>
+              <li>Austausch von Sichtscheibe</li>
+              <li>Ersatzteilmontage</li>
+            </ul>
+          </article>
+
+          <article class="service-group">
+            <h3 class="service-group__title">Schornsteinbau</h3>
+            <ul role="list">
+              <li>Edelstahl-Schornsteine</li>
+              <li>Schornsteinverlängerungen</li>
+              <li>Nachrüstung bestehender Anlagen</li>
+              <li>Fachgerechte Montage</li>
+            </ul>
+          </article>
+
+          <article class="service-group">
+            <h3 class="service-group__title">Schornsteinarbeiten</h3>
+            <ul role="list">
+              <li>Einmauern von Reinigungsklappen</li>
+              <li>Kleinere Mauerarbeiten am Schornstein</li>
+              <li>Sanierungsarbeiten</li>
+            </ul>
+          </article>
+
+          <article class="service-group">
+            <h3 class="service-group__title">Ofenmontage</h3>
+            <ul role="list">
+              <li>Lieferung und Anschluss von Kaminöfen</li>
+              <li>Austausch vorhandener Öfen</li>
+              <li>Demontage alter Feuerstätten</li>
+              <li>Fachgerechte Inbetriebnahme</li>
+            </ul>
+          </article>
+
+          <article class="service-group">
+            <h3 class="service-group__title">Wartung und Reinigung</h3>
+            <ul role="list">
+              <li>Reinigung von Kaminöfen</li>
+              <li>Wartungsarbeiten</li>
+            </ul>
+          </article>
+
+        </div>
         <p class="service-note">Ihre gewünschte Leistung ist nicht aufgeführt? Nehmen Sie einfach Kontakt auf und schildern Sie Ihr Anliegen.</p>
       </div>
     </section>
