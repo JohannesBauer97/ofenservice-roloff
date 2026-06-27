@@ -105,9 +105,6 @@ header {
   display: block;
   width: 100%;
   max-width: 380px;
-  aspect-ratio: 1;
-  object-fit: cover;
-  object-position: center top;
   border: 3px solid var(--copper);
 }
 
@@ -422,8 +419,8 @@ footer a:focus {
   }
 
   .hero-portrait {
-    max-width: 100%;
-    aspect-ratio: 4 / 3;
+    max-width: min(75vw, 300px);
+    margin: 0 auto;
   }
 
   .hero-portrait-col::after {
